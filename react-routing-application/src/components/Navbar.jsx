@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Menu } from 'antd';
-const Navbar = () => {
+const Navbar = ({setIsAdminPage}) => {
 
     const items = [
         {
             label: (
-                <Link style={{ display: 'inline-block', marginInline: '10px' }} to={"/admin"}>Admin</Link>
+                <Link onClick={()=>{setIsAdminPage(true)}} style={{ display: 'inline-block', marginInline: '10px' }} to={"/admin"}>Admin</Link>
             )
         },
         {
