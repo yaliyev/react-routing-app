@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import { Link, Route, RouterProvider, Routes, createBrowserRouter } from 'react-router-dom'
 import Home from './pages/Home'
 import Admin from './pages/Admin'
 import Contact from './pages/Contact'
@@ -13,6 +13,7 @@ import Navbar from './components/Navbar'
 import NotFound from './components/NotFound'
 import Footer from './components/Footer'
 import Details from './pages/Details'
+
 
 function App() {
   const [isAdminPage,setIsAdminPage] = useState(false)
