@@ -6,6 +6,7 @@ import Admin from './components/Admin'
 import Contact from './components/Contact'
 import About from './components/About'
 import Categories from './components/Categories'
+import AddCategory from './components/AddCategory'
 import Suppliers from './components/Suppliers'
 import AdminNavbar from './components/AdminNavbar'
 import Navbar from './components/Navbar'
@@ -23,6 +24,7 @@ function App() {
       <Route path="/" element={<Home/>} />
       <Route path="/admin" element={<Admin/>} />
       <Route path="/admin/categories" element={<Categories/>} />
+      <Route path="/admin/categories/addCategory" element={<AddCategory/>} />
       <Route path="/admin/suppliers" element={<Suppliers/>} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/about" element={<About/>} />
