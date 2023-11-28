@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 import { Table, Button } from 'antd';
 import { getAllCategories } from '../services/categories_request'
 import { Link } from 'react-router-dom';
-const Categories = () => {
-
+const Categories = ({setCurrentCategory}) => {
+  const navigateTo = useNavigate();
   const [categories, setCategories] = useState([])
 
   useEffect(() => {
@@ -40,7 +41,9 @@ const Categories = () => {
       key: category.id,
       id: category.id,
       name: category.name,
-      actionButton: <Button type="primary">Info</Button>
+      actionButton: <Button onClick={()=>{setCurrentCategory(category);navigateTo("/admin/categories/details")}} type="primary">
+       Info
+      </Button>
     }
   });
 

@@ -6,7 +6,7 @@ const Home = () => {
     <>
      <Row>
       <Col span={12}>
-      <Title level={2}>This is Home Page</Title>
+      <Title style={{textAlign:'left','marginLeft':'20px'}} level={2}>This is Home Page</Title>
       </Col>
      </Row>
     </>
