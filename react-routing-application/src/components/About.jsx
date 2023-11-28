@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Title from 'antd/es/typography/Title'
 const About = () => {
   return (
-    <div>About</div>
+    <Title level={2}>This is About Page</Title>
   )
 }
 

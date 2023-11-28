@@ -11,12 +11,18 @@ const AdminNavbar = ({setIsAdminPage}) => {
         },
         {
             label: (
-                <Link style={{ display: 'inline-block', marginInline: '10px' }}>Dashboard</Link>
+                <Link style={{ display: 'inline-block', marginInline: '10px' }} to={"/admin"}>Dashboard</Link>
             )
         },
         {
             label: (
-                <Link style={{ display: 'inline-block', marginInline: '10px' }} to={"/categories"}>Categories</Link>
+                <Link style={{ display: 'inline-block', marginInline: '10px' }} to={"/admin/categories"}>Categories</Link>
+            )
+        },
+        ,
+        {
+            label: (
+                <Link style={{ display: 'inline-block', marginInline: '10px' }} to={"/admin/suppliers"}>Suppliers</Link>
             )
         }
     ];
