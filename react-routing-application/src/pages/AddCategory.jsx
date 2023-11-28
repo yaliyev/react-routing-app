@@ -9,14 +9,14 @@ const AddCategory = () => {
     let nameRef = useRef("");
     let descriptionRef = useRef("");
 
-    function submitCategory() {
+   async function submitCategory() {
         // e.preventDefault();
         const category = {
             name: nameRef.current.input.value,
             description: descriptionRef.current.input.value
         }
 
-        addCategory(category);
+        await  addCategory(category);
         navigateTo('/admin/categories');
 
     }
